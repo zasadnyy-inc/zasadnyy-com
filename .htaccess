@@ -1,2 +1,1 @@
-Redirect /index.html http://v.zasadnyy.com/
-Redirect / http://v.zasadnyy.com/
+Redirect 301 / http://v.zasadnyy.com/
