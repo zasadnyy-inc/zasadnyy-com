@@ -1,0 +1,19 @@
+# Plugins
+gems:
+- jekyll-sitemap
+
+# Grunt handles images and assets.
+exclude: ['img', 'css', 'js', 'fonts',
+          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+include: ['.htaccess']
+
+# Markdown library
+markdown: kramdown
+
+# Site settings
+baseurl: ""
+url: "http://zasadnyy.com"
+
+# Analytics
+google_analytics_tracking_id: ""
+webtools_site_verification: ""

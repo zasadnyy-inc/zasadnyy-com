@@ -1,0 +1,47 @@
+// Font weights
+$light: 100;
+$regular: 300;
+$bold: 400;
+
+// Base Font
+$base-font-family: sans-serif;
+$fixed-font-family: 'Roboto';
+$base-font-weight: $regular;
+$base-font-size: 20px;
+$base-line-height: 28px;
+
+// Headings
+$header-font-weight: $bold;
+$h1-font-size: 3.2 * $base-font-size;
+$h2-font-size: 2.8 * $base-font-size;
+$h3-font-size: 2.4 * $base-font-size;
+$h4-font-size: 2 * $base-font-size;
+$h5-font-size: 1.6 * $base-font-size;
+$h6-font-size: 1.1 * $base-font-size;
+
+// Colors
+$main-color: #FF9900;
+$main-color-second: #88CED7;
+$sub-color: #FFB240;
+$sub-color-second: #6BA2A9;
+$header-color: #ffffff;
+$text-color: #ffffff;
+$sub-text-color: #999999;
+$link-lighten-amount: 20%;
+
+// Animations
+$transition-duration: 0.4s;
+// $transition-animation: ease-in-out;
+$transition-animation: cubic-bezier(0.645, .045, .355, 1);
+$all-animation: all $transition-duration $transition-animation;
+$color-animation: color $transition-duration $transition-animation;
+$width-animation: width $transition-duration $transition-animation;
+$opacity-animation: opacity $transition-duration $transition-animation;
+$transform-animation: transform $transition-duration $transition-animation;
+$box-shadow-animation: box-shadow $transition-duration $transition-animation;
+
+// Path
+$image-dir: "../img";
+$sprites-dir: $image-dir + "/sprites";
+
+@import "modules/utility";

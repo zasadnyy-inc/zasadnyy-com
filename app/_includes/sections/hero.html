@@ -1,0 +1,54 @@
+<div class="hero">
+    <div class="layer layer-left">
+        <div class="content flow-img" style="background-image: url({{ site.data.vitaliy.background_image | prepend: "/img/sections/" | prepend: site.baseurl }})">
+        	<div class="overlay"></div>
+            <div class="center-block">
+                <span class="label"><span class="important">{{ site.data.vitaliy.name }}</span> {{ site.data.vitaliy.surname }}</span>
+                <span class="headline">{{ site.data.vitaliy.headline }}</span>
+                {% for nav in site.data.vitaliy.navigation %}
+                <a class="button" href="{{ nav.permalink }}"><i class="icon-right-arrow bounce"></i>{{ nav.text }}</a>
+                {% endfor %}
+            </div>
+            <div class="bottom-block">
+                {% for item in site.data.vitaliy.social %}
+                <a class="social" href="{{ item.link }}" target="_blank">
+                    <svg class="icon {{ item.icon }}">
+                        <use xlink:href="{{ "#" | append: item.icon }}"></use>
+                    </svg>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="layer layer-right">
+        <div class="content flow-img" style="background-image: url({{ site.data.oleh.background_image | prepend: "/img/sections/" | prepend: site.baseurl }})">
+            <div class="overlay"></div>
+            <div class="center-block">
+                <span class="label"><span class="important">{{ site.data.oleh.name }}</span> {{ site.data.oleh.surname }}</span>
+                <span class="headline">{{ site.data.oleh.headline }}</span>
+                {% for nav in site.data.oleh.navigation %}
+                <a class="button" href="{{ nav.permalink }}"><i class="icon-right-arrow bounce"></i>{{ nav.text }}</a>
+                {% endfor %}
+            </div>
+            <div class="bottom-block">
+                {% for item in site.data.oleh.social %}
+                <a class="social" href="{{ item.link }}" target="_blank">
+                    <svg class="icon {{ item.icon }}">
+                        <use xlink:href="{{ "#" | append: item.icon }}"></use>
+                    </svg>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="layer layer-center">
+        <div class="content flow-img" style="background-image: url({{ site.data.global.background_image | prepend: "/img/sections/" | prepend: site.baseurl }})">
+        	<div class="overlay"></div>
+	        <div class="center-block">
+	    		<img class="logo" src="{{ "/img/sections/logo.svg" | prepend: site.baseurl }}" alt="Zasadnyys' site">
+	    		<span class="main-text">Whom are you looking for?</span>
+	        </div>
+        </div>
+    </div>
+	<!-- <img class="logo" src="{{ "/img/sections/logo.svg" | prepend: site.baseurl }}" alt="Zasadnyys' site"> -->
+</div>

@@ -1,0 +1,18 @@
+# Base information
+name: Vitaliy
+surname: Zasadnyy
+
+background_image: "vitaliy.jpg"
+headline: "Android developer, Unity developer, GDG manager"
+
+# Navigation
+navigation:
+ - {permalink: "http://v.zasadnyy.com/", text: "Go to blog"}
+
+# Social
+social:
+ - {icon: "icon-google-plus", link: "https://www.google.com/+VitalikZasadnyy"}
+ - {icon: "icon-twitter", link: "https://twitter.com/zasadnyy"}
+ - {icon: "icon-facebook", link: "https://www.facebook.com/zasadnyy"}
+ - {icon: "icon-linkedin", link: "https://www.linkedin.com/in/zasadnyy"}
+ - {icon: "icon-github", link: "https://github.com/zasadnyy"}

@@ -1,0 +1,34 @@
+.flow-img {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.bounce {
+	animation: arrowBounce .75s $transition-animation infinite;
+}
+
+@keyframes arrowBounce {
+    0% {
+        transform: translateX(0px) rotate(45deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(4px) rotate(45deg);
+        opacity: .6;
+    }
+
+    100% {
+        transform: translateX(0px) rotate(45deg);
+        opacity: 1;
+    }
+}
+
+.overlay {
+	width: 100%;
+    height: 100%;
+    background: #000000;
+}

@@ -1,0 +1,195 @@
+.hero {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.layer {
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    @media (max-width: 767px) {
+        height: 50%;
+        display: block;
+    }
+    &:hover {
+        .button {
+        	opacity: 1;
+			transform: translateX(0);
+        }
+	    .social {
+	    	opacity: .8;
+    		transform: translateY(0);
+    		&:nth-child(1) {
+                transition-delay: .1s;
+            }
+            &:nth-child(2) {
+                transition-delay: .15s;
+            }
+            &:nth-child(3) {
+                transition-delay: .2s;
+            }
+            &:nth-child(4) {
+                transition-delay: .25s;
+            }
+            &:nth-child(5) {
+                transition-delay: .3s;
+            }
+	    }
+	    .overlay {
+	    	opacity: .2;
+	    }
+	    .center-block {
+	    	opacity: .8;
+	    }
+    }
+    .social {
+    	display: inline-block;
+    	opacity: 0;
+    	transform: translateY(250%);
+    	transition: $opacity-animation, $transform-animation;
+    }
+    .overlay {
+    	opacity: .3;
+    	transition: $opacity-animation;
+    }
+}
+.layer-left {
+    width: 50%;
+    @media (max-width: 767px) {
+        width: 100%;
+    }
+    &:hover {
+        ~ .layer-center {
+            @media (min-width: 768px) {
+                width: 25%;
+            	transform: translateX(40px) skewX(-10deg);
+            }
+        }
+        .center-block {
+            transform: translate(-35%, -50%);
+        }
+    }
+    .center-block {
+        left: 35%;
+    }
+    .bottom-block {
+        left: 43.5%;
+    }
+    .button {
+		transform: translateX(-25%);
+    }
+}
+.layer-center {
+    color: #ffffff;
+    width: 30%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+    transform: skewX(-10deg);
+    transition: $width-animation, $transform-animation;
+    @media (max-width: 767px) {
+        width: 100%;
+        height: 30%;
+        top: 50%;
+        transform: translateY(-50%) skewY(-10deg);
+    }
+    .center-block {
+    	width: 70%;
+        transform: translate(-50%, -50%) skewX(10deg);
+        @media (max-width: 767px) {
+            transform: translate(-50%, -50%) skewY(10deg);
+        }
+    }
+}
+.layer-right {
+    right: 0;
+    width: 50%;
+    @media (max-width: 767px) {
+        width: 100%;
+        bottom: 0;
+    }
+    &:hover {
+        ~ .layer-center {
+            @media (min-width: 768px) {
+                width: 25%;
+            	transform: translateX(-40px) skewX(-10deg);
+            }
+        }
+        .center-block {
+            transform: translate(-65%, -50%);
+        }
+	    .social {
+	    	&:nth-child(5) {
+                transition-delay: .1s;
+            }
+            &:nth-child(4) {
+                transition-delay: .15s;
+            }
+            &:nth-child(3) {
+                transition-delay: .2s;
+            }
+            &:nth-child(2) {
+                transition-delay: .25s;
+            }
+            &:nth-child(1) {
+                transition-delay: .3s;
+            }
+	    }
+    }
+    .center-block {
+        left: 65%;
+    }
+    .bottom-block {
+        left: 60%;
+    }
+    .button {
+		transform: translateX(25%);
+    }
+}
+.center-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: $opacity-animation, $transform-animation;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.label {
+    font-size: 1.1em;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.important {
+    display: block;
+    font-size: 1.6em;
+}
+.headline {
+    margin: 10px auto 0;
+    display: block;
+    max-width: 90%;
+    font-size: 0.8em;
+    letter-spacing: 3px;
+    line-height: 1.15;
+}
+.button {
+	margin-top: 35px;
+	margin-left: -15px;
+    display: block;
+    font-size: 0.9em;
+    opacity: 0;
+    transition: $opacity-animation, $transform-animation;
+    .icon-right-arrow {
+    	margin-right: 15px;
+    }
+}
+.bottom-block {
+	position: absolute;
+    bottom: 1.2em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
